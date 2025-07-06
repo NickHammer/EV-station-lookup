@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Charging Stations Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="controls">
+        <label for="vehicleSelect">Select Your EV:</label>
+        <select id="vehicleSelect">
+            <option value="">-- Choose Your Vehicle --</option>
+            <option value="CCS (Type 1)">Volkswagen ID.4</option>
+            <option value="NACS / Tesla Supercharger">Tesla Model 3</option>
+            <option value="CHAdeMO">Nissan Leaf</option>
+        </select>
+    </div>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
